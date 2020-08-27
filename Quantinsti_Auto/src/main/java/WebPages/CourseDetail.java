@@ -42,7 +42,7 @@ public class CourseDetail extends BaseClass{
 		String cart=driver.findElement(By.xpath("//li//a[@href='/cart']//span[text()='5']")).getText();
 		System.out.println("no of course in cart " + cart);
 		String coursecount=Integer.toString(myElements.size());
-		if(cart == coursecount) {
+		if(cart.equalsIgnoreCase(coursecount)) {
 			
 			System.out.println("Course count is correct");
 		}
