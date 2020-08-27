@@ -46,8 +46,9 @@ public class CourseDetail extends BaseClass{
 			
 			System.out.println("Course count is correct");
 		}
-		else
+		else {
 			System.out.println("course count is incorrect");
+		}
 		System.out.println("====================================================");
 		
 		String baseamount=driver.findElement(By.xpath("//DIV[@class='cart-summary-right'][text()='₹35192']")).getText();
