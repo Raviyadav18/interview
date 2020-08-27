@@ -6,7 +6,7 @@ scenario 1:
 . submit the resource if it is sucessful then state chnages from S0 to S1 and if it is fail state changes from S0 to S5.
 
  scenario2:
-. Endpoint run takes a paramter as user ID and a resource (which was genarted in stage1)  as parameter.
+. Endpoint run takes a paramter as user ID and a resource (which was genarted in stage1 or response of Start endpoint)  as parameter.
 . submit the resource for run endpoint.
 . endpoint run validates the paraneter with S1 stage to validate the userID and if it successfull it will change the stage from S1 to S2 to S3.
 . if it fails it will change the stage from S1 to S5.
@@ -15,6 +15,6 @@ scenario 1:
  
  .Endppoint Stop 
  . submit the resource for Stop endpoint.
- . it will take userID and resource (output of endpoint run or resource of S3) to valiadte userID
+ . it will take userID and resource (output of endpoint run or response of S3) to valiadte userID
  . if it is successful it will change the state from S3 to S4 to S5.
  .if it fails it will change the stage from S3 to S5
