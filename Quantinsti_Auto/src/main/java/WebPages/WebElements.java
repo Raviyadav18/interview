@@ -1,16 +1,27 @@
 package WebPages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Quantinsti.Quantinsti_Auto.BaseClass;
+
 
 public class WebElements extends BaseClass {
 
 	public void browse_course() throws InterruptedException {
-/*		driver.findElement(By.xpath("//li[@class='item menu__link--toggle']//a[@href='/courses']")).click();
+	    	
+		Actions actions = new Actions(driver);
+		WebDriverWait wait = new WebDriverWait(driver, 100);
+		WebElement e= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//header[@class='nav-wrapper']//a[@href='/courses']")));
+		System.out.println(e.getText());
+		actions.moveToElement(e);
+		WebElement subMenu = driver.findElement(By.xpath("//header[@class='nav-wrapper']//a[@href='/learning-track/sentiment-analysis-trading']"));
+		actions.moveToElement(subMenu);
+		actions.click().build().perform();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//SPAN[text()='Sentiment Analysis in Trading']")).click();
-		*/
-		driver.get("https://quantra.quantinsti.com/learning-track/sentiment-analysis-trading");
+		
 	}
 }
