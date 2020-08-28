@@ -42,4 +42,6 @@ Assignment 3:
 java program:
 
 in this java prog i have created 3 variabe type int a=3, b=5, and sum =0
-i create 
+i create for loop which iterate 1 to 1000 and uner that there is a if condition in which number is divisivle by 3 or 5.
+if condition is true it comes in if method and add that particular number to sum variable.
+out of the loop we are just printing the sum variable.
