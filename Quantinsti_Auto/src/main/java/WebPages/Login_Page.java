@@ -25,6 +25,7 @@ public class  Login_Page extends BaseClass {
 	public void signout() {
 		 driver.findElement(By.xpath("//li[@class='item avatar d-user-profile']//div[text()='RY']")).click();
 		 driver.findElement(By.xpath("(//A[@href='javascript:void(0);'][text()='Logout'][text()='Logout'])[2]")).click();
+		 System.out.println("=======Test Case Completed=======");
 		 driver.close();
 	}
 	
